@@ -1,5 +1,6 @@
 .fifth-section .fifth-section-title{
     text-align: center;
+    font-size: 36px;
 }
 
 .fifth-section .fifth-section-title span{
@@ -12,4 +13,11 @@
     padding: 7px 11px;
     margin: 0 auto;
     margin-top: 32px;
+}
+
+@media (max-width: 576px) {
+    .fifth-section .fifth-section-title{
+        font-size: 30px;
+    }
+    
 }
