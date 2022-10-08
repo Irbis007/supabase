@@ -1,0 +1,64 @@
+.benefits{
+    padding: 96px 0;
+}
+
+.benefits .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+.benefits .benefit-1 .benefit-1-icons{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+} 
+
+.benefits .benefit-1 .benefit-1-icons img{
+    background: var(--bg-color-800);
+    width: 32px;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.benefits .benefit-1 .benefit-1-icons div{
+    position: relative;
+    width: 11px;
+    height: 11px;
+}
+.benefits .benefit-1 .benefit-1-icons div::before{
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 1px;
+    background-color: var(--bg-color-800);
+    transform: rotateZ(-45deg);
+    top: 5px;
+}
+.benefits .benefit-1 .benefit-1-icons div::after{
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 1px;
+    background-color: var(--bg-color-800);
+    transform: rotateZ(45deg);
+    top: 5px;
+}
+
+.benefit-descr{
+    color: var(--text-color-100);
+    font-family: 'Roboto', sans-serif;
+    width: 280px;
+    margin-top: 16px;
+    line-height: 28px;
+}
+
+@media (max-width:900px) {
+    .benefits .container{
+        justify-content: center;
+    }
+    
+}

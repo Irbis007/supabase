@@ -1,0 +1,14 @@
+.fifth-section .fifth-section-title{
+    text-align: center;
+}
+
+.fifth-section .fifth-section-title span{
+    color: var(--text-color-900);
+}
+
+.fifth-section .fifth-section-button{
+    display: block;
+    width: 156px;
+    padding: 7px 11px;
+    margin: 0 auto;
+}

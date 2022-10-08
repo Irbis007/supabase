@@ -1,0 +1,103 @@
+
+.button{
+    border-radius: 4px;
+    color: var(--text-color-100);
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid var(--bg-color-500);
+    transition: all .2s;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.button-green{
+    background-color: var(--bg-color-400);
+    padding: 7px 11px;
+}
+.button-green:hover{
+    background-color: var(--bg-color-600);
+}
+
+.button-transparent{
+    padding: 7px 20px;
+    background-color: var(--bg-color-500);
+}
+.button-transparent:hover{
+    border: 2px solid var(--bg-color-400);
+}
+
+.intro-button{
+    padding: 7px 17px;
+    margin-top: 64px;
+    margin-left: 45px;
+}
+
+.descr{
+    color: var(--text-color-100);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 24px;
+}
+
+
+
+.title{
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color-100);
+}
+.intro-title{
+    font-weight: 700;
+    margin-top: 15px;
+}
+.benefit-title{
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+@media (max-width:576px) {
+    .button-green{
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+    .button-transparent{
+        padding: 5px 13px;
+        font-size: 11px;
+    }
+    .title{
+        font-size: 35px;
+    }
+    
+}
+
+.body-white .content-example, .body-white .content-example div{
+    background-color: var(--bg-color-1500) !important;
+}
+
+.body-white, .body-white div{
+    background-color: var(--bg-color-800);
+}
+
+.body-white, .body-white .title, .body-white a, .body-white .descr, .body-white div, .body-white button, .body-white .descr p, .body-white span{
+    color: #000 !important ;
+}
+
+.body-white span.active{
+    background-color: var(--bg-color-1500) !important;
+}
+
+.body-white span.command-grey-text{
+    color: var(--text-color-500) !important;
+}
+.body-white span.command-blue-text{
+    color: var(--text-color-600) !important;
+}
+.body-white span.command-green-text{
+    color: var(--text-color-700) !important;
+}
+
+.body-white .footer .theme{
+    background-color: rgba(0, 0, 0, 0) !important;
+}

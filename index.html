@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a href="#"><img src="img/icons/logo.svg" alt="header logo"></a>
+            </div>
+            <nav class="header-nav ">
+                <ul class="list">
+                    <li class="item item-category category">
+                        <div class="product category-title">Product <img src="img/icons/vector.png" alt="vector"></div>
+                        <div class="category-list product-list">
+                            <div class="category-item">
+                                <a href="#" class="product-link">Water</a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#" class="product-link">Cola</a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#" class="product-link">Fanta</a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#" class="product-link">Pepsi</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item item-category">
+                        <div class="developers category-title">Developers <img src="img/icons/vector.png" alt="vector"></div>
+                        <div class="category-list developers-list">
+                            <div class="category-item">
+                                <a href="#" class="developers-link">bread</a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#" class="developers-link">car</a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#" class="developers-link">bad</a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#" class="developers-link">like</a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#" class="developers-link">most</a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#" class="developers-link">look</a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#" class="developers-link">transition</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Beta</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header-buttons">
+                <button class="header-button button-green button">Start your project</button>
+                <button class="header-button button-transparent button">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro-body">
+                <div class="subtitle"><img src="img/icons/storage.png" alt="Storage-img"> Storage</div>
+                <div class="intro-title title">Store and serve <br> any type of digital content</div>
+                <div class="intro-descr descr">
+                    <p>
+                        An open source Object store service with unlimited scalability, for any file type.
+                    </p>
+                    <p>
+                        With custom policies and permissions that are familiar and easy to implement.
+                    </p>
+                </div>
+                <button class="intro-button button button-green">Start a project</button>
+            </div>
+            <div class="intro-image">
+                <img src="img/intro.png" alt="imtro img" class="intro-img">
+            </div>
+        </div>
+    </section>
+
+    <div class="benefits">
+        <div class="container">
+            <div class="benefit-1 benefit">
+                <div class="benefit-icon benefit-1-icons"><img src="img/icons/storage.png" alt="storage"> <div></div> <img src="img/icons/key.png" alt="key"> <div></div> <img src="img/icons/ring-box.png" alt="box"></div>
+                <div class="benefit-title title">Interoperable</div>
+                <div class="benefit-descr descr">Integrates well with the rest of Supabase ecosystem, including Auth and Postgres.</div>
+            </div>
+            <div class="benefit-2 benefit">
+                <div class="benefi-2-icon"><img src="img/icons/internet.png" alt="internet icon"></div>
+                <div class="benefit-title title">Lightning fast</div>
+                <div class="benefit-descr">Thin API server layer that leverages Postgres' permissions and performance.</div>
+            </div>
+            <div class="benefit-3 benefit">
+                <div class="benefi-3-icon"><img src="img/icons/check-box.png" alt="check box icon"></div>
+                <div class="benefit-title title">Dependable</div>
+                <div class="benefit-descr">Enterprise-level scalability and durability.</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="second-section">
+        <div class="container">
+            <div class="second-section-top">
+                <div class="second-section-title title">Sleek dashboard for managing your media</div>
+                <div class="second-section-descr descr">
+                    <p>
+                        A complete Object Explorer so that any of your team can use.
+                    </p>
+                    <p>
+                        Drag and drop uploading, moving objects, and multiple object selection. As easy as working on your desktop.
+                    </p>
+                </div>
+            </div>
+            <div class="second-section-body">
+                <div class="second-section-image-block">
+                    <div class="second-section-img-top"> 
+                        <span class="second-section-tab active" data-tab="#tab-1">File previews</span>
+                        <span class="second-section-tab" data-tab="#tab-2">Column view</span> 
+                        <span class="second-section-tab" data-tab="#tab-3">List view</span> 
+                        <span class="second-section-tab" data-tab="#tab-4">Multi select actions</span> 
+                        <span class="second-section-tab" data-tab="#tab-5">Path navigator</span> 
+                    </div>
+                    <div class="second-section-img">
+                        <img src="img/second-section.png" alt=""class="second-section-tab-content active" id="tab-1">
+                        <div class="second-section-tab-content block-red" id="tab-2"></div>
+                        <div class="second-section-tab-content block-green" id="tab-3"></div>
+                        <div class="second-section-tab-content block-white" id="tab-4"></div>
+                        <div class="second-section-tab-content block-yellow" id="tab-5"></div>
+                    </div>
+                </div>
+                <div class="second-section-content content">
+                    <div class="content-title title">File previews</div>
+                    <div class="content-descr descr">Preview any media type, including video and audio.</div>
+                    <div class="content-check">Check out our example app</div>
+                    <div class="content-example example">
+                        <div class="example-title">Profile managemtent example</div>
+                        <div class="example-descr">Update a user account with public profile information, including uploading a profile image.</div>
+                        <div class="example-created">
+                            <div class="created-by">Created by:</div>
+                            <img src="img/icons/supabase.png" alt="supabase">
+                            <div class="created-supabase">supabase</div>
+                        </div>
+                    </div>
+                    <div class="github">nextjs-ts-user-management <img src="img/icons/github.svg" alt="github"></div>
+                    <button class="second-section-button"><img src="img/icons/triangle.png" alt="triangle" > <div></div> Deploy</button>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="third-section">
+        <div class="container">
+            <div class="third-section-body">
+                <div class="third-section-title title">Simplefand convenient APIs</div>
+                <div class="third-section-descr descr">
+                    <p>
+                        Built from the ground-up for interoperable authentication.
+                    </p>
+                    <p>
+                        Fast and easy to implement using our powerful library clients. Asset optimization and image transformation coming soon!
+                    </p>
+                </div>
+                <div class="third-section-benefits">
+                    <div class="benefit">
+                        <img src="img/icons/wifi.png" alt="wifi">
+                        <div class="benefit-title title">CDN integration</div>
+                        <div class="benefit-descr descr">Serve from the edge to reduce latency.</div>
+                        <button class="benefit-button">Coming soon</button>
+                    </div>
+                    <div class="benefit">
+                        <img src="img/icons/auto.png" alt="auto">
+                        <div class="benefit-title title">Auto transformation & optimisation</div>
+                        <div class="benefit-descr descr">Resize and compress your media before you serve it.</div>
+                        <button class="benefit-button">Coming soon</button>
+                    </div>
+                </div>
+            </div>
+            <div class="third-section-contetn">
+                <div class="third-section-tabs-block">
+                        <div class="third-section-tabs-top"> 
+                            <span class="third-section-tab active" data-tab="#third-section-tab-1">Upload a file</span>
+                            <span class="third-section-tab" data-tab="#third-section-tab-2">Download a file</span> 
+                            <span class="third-section-tab" data-tab="#third-section-tab-3">List files</span> 
+                            <span class="third-section-tab" data-tab="#third-section-tab-4">Move and rename files</span> 
+                            <span class="third-section-tab" data-tab="#third-section-tab-5">Delete files</span> 
+                        </div>
+                    <div class="third-section-tab-wrapper">
+                        <div class="third-section-tab-content active" id="third-section-tab-1">
+                            <div class="third-section-content-str">
+                                <div class="number-str">1</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">2</div>
+                                <div class="content-str"><span class="command-grey-text">// Upload an image to the "avatars" bucket</span></div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">3</div>
+                                <div class="content-str"><span class="command-blue-text">const</span>spaceCat = event.target.files[0]</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">4</div>
+                                <div class="content-str"><span class="command-blue-text">const</span>{ data, error } =<span class="command-blue-text">await</span>supabase</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">5</div>
+                                <div class="content-str">.storage</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">5</div>
+                                <div class="content-str">.storage</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">6</div>
+                                <div class="content-str">.from(<span class="command-green-text">'avatars'</span>)</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">7</div>
+                                <div class="content-str">.upload(<span class="command-green-text">'space-cat.png'</span>, spaceCat)</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">8</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">9</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">10</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">11</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">12</div>
+                            </div>
+                            <div class="third-section-content-str">
+                                <div class="number-str">13</div>
+                            </div>
+                            <hr class="third-section-content-hr">
+                        </div>
+                        <div class="third-section-tab-content block-red" id="third-section-tab-2"></div>
+                        <div class="third-section-tab-content block-green" id="third-section-tab-3"></div>
+                        <div class="third-section-tab-content block-white" id="third-section-tab-4"></div>
+                        <div class="third-section-tab-content block-yellow" id="third-section-tab-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fourth-section">
+        <div class="container">
+            <div class="fourth-section-body">
+                <div class="fourth-section-title title">Integrates natively with Supabase Auth</div>
+                <div class="fourth-section-descr descr">
+                    <p>
+                        Using Postgres Row Level Security to create Object access rules.
+                    </p>
+                    <p>
+                        Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.
+                    </p>
+                </div>
+            </div>
+            <div class="fourth-section-contetn">
+                <div class="fourth-section-tabs-block">
+                        <div class="fourth-section-tabs-top"> 
+                            <span class="fourth-section-tab active" data-tab="#fourth-section-tab-1">Public access to a bucket</span>
+                            <span class="fourth-section-tab" data-tab="#fourth-section-tab-2">Public access to a folder</span> 
+                            <span class="fourth-section-tab" data-tab="#fourth-section-tab-3">Authenticated access to a bucket</span> 
+                        </div>
+                    <div class="fourth-section-tab-wrapper">
+                        <div class="fourth-section-tab-content active" id="fourth-section-tab-1">
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">1</div>
+                                <div class="content-str"><span class="command-blue-text">create  policy </span><span class="command-green-text">   "Public Access"</span></div>
+                            </div>
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">2</div>
+                                <div class="content-str"><span class="command-blue-text">on</span>storage.objects <span class="command-blue-text">for all</span></div>
+                            </div>
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">3</div>
+                                <div class="content-str"><span class="command-blue-text">using</span>( bucket_id = <span class="command-green-text">'avatars'</span>);</div>
+                            </div>
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">4</div>
+                                <div class="content-str"></div>
+                            </div>
+                            <div class="fourth-section-command-title title">Allow public CRUD access to a bucket</div>
+                            <div class="fourth-section-command-descr descr">This will allow any user access to the bucket named 'avatars'</div>
+                        </div>
+                        <div class="fourth-section-tab-content block-red" id="fourth-section-tab-2"></div>
+                        <div class="fourth-section-tab-content block-green" id="fourth-section-tab-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fifth-section">
+        <div class="container">
+            <div class="fifth-section-title title"><span>Build in a weekend,</span>scale to millions</div>
+            <button class="button fifth-section-button button-green">Start your project</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="logo-section">
+                <div class="logo"><img src="img/icons/logo.svg" alt=""></div>
+                <div class="footer-social">
+                    <img src="img/icons/twitter-footer.svg" alt="twitter">
+                    <img src="img/icons/github-footer.svg" alt="github">
+                </div>
+            </div>
+
+            <nav class="footer-nav">
+                <div class="nav-title title">Product</div>
+                <ul class="list">
+                    <li class="item">
+                        <a href="#" class="link">Database</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Authentication</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Storage</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Functions <br> Coming soon</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <div class="nav-title title">Resources</div>
+                <ul class="list">
+                    <li class="item">
+                        <a href="#" class="link">Support</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Case Studies</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">System Status</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Terms of service</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <div class="nav-title title">Developers</div>
+                <ul class="list">
+                    <li class="item">
+                        <a href="#" class="link">Documentation</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">API Reference</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Guides</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <div class="nav-title title">Company</div>
+                <ul class="list">
+                    <li class="item">
+                        <a href="#" class="link">Blog</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Open Source</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Humans.txt</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Lawyers.txt</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container"><hr class="footer-hr"></div>
+        <div class="subfooter">
+            <div class="container">
+                <div class="created-by">© Supabase Inc</div>
+                <div class="theme">
+                    <img src="img/icons/sun.svg" alt="sun">
+                    <button class="footer-button active"><div class="circle-button"></div></button>
+                    <img src="img/icons/moon.svg" alt="moon">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

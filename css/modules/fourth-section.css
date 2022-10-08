@@ -1,0 +1,168 @@
+.fourth-section{
+    padding: 100px 0;
+}
+
+.fourth-section .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourth-section .fourth-section-body .fourth-section-title{
+    max-width: 430px;
+    font-size: 36px;
+}
+
+.fourth-section .fourth-section-body .fourth-section-descr{
+    max-width: 390px;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+
+.fourth-section .fourth-section-body .fourth-section-benefits{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.fourth-section .fourth-section-body .fourth-section-benefits .benefit{
+    max-width: 193px;
+}
+
+.fourth-section .fourth-section-body .fourth-section-benefits .benefit .benefit-title{
+    font-size: 18px;
+}
+
+.fourth-section .fourth-section-body .fourth-section-benefits .benefit .benefit-descr{
+    margin-top: 19px;
+    font-size: 14px;
+    max-width: 192px;
+}
+
+.fourth-section .fourth-section-body .fourth-section-benefits .benefit .benefit-button{
+    font-size: 12px;
+    color: var(--text-color-300);
+    border: none;
+    border-radius: 9999px;
+    background: rgba(49, 130, 206, 0.1);
+    margin-top: 19px;
+}
+
+.fourth-section-content-str {
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-color-100);
+    font-size: 11px;
+}
+.number-str {
+    background-color: var(--bg-color-1300);
+    padding: 4px 12px 3px 22px;
+    width: 48px;
+    color: var(--text-color-400);
+    display: flex;
+    justify-content: flex-end;
+    font-family: 12px;
+}
+.content-str {
+    display: flex;
+    align-items: center;
+}
+.command-grey-text {
+    color: var(--text-color-500);
+}
+.command-blue-text {
+    color: var(--text-color-600);
+}
+.command-green-text {
+    color: var(--text-color-700);
+}
+.fourth-section-content-hr {
+    width: 100%;
+    padding: 0;
+    height: 1px;
+    border: 0;
+    margin: 13px 0 44px 0;
+    background-color: var(--bg-color-900);
+}
+
+.fourth-section-tab-content{
+    width: 526px;
+    border: 1px solid var(--bg-color-900);
+    border-radius: 6px;
+    padding: 11px 0 0 1px;
+}
+
+.fourth-section-tabs-top{
+    display: flex;
+    justify-content: space-between;
+    max-width: 532px;
+    margin-bottom: 16px;
+}
+
+.fourth-section-tab{
+    color: var(--text-color-100);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    padding: 7px 11px;
+}
+
+.fourth-section-tab.active{
+    background-color: var(--bg-color-900);
+    border-radius: 4px;
+}
+
+.fourth-section-tab-content{
+    display: none;
+}
+.fourth-section-tab-content.active{
+    display: block;
+}
+
+.fourth-section .fourth-section-command-title{
+    font-size: 18px;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+.fourth-section .fourth-section-command-descr{
+    font-size: 14px;
+    color: var(--text-color-200);
+    margin: 16px 0 100px 32px;
+}
+
+.fourth-section .content-str{
+    display: flex;
+    gap: 7px;
+}
+
+@media (max-width: 991px) {
+    .fourth-section .container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .fourth-section .fourth-section-body .fourth-section-title{
+        margin-top: 30px;
+    }
+    
+}
+
+@media (max-width:576px) {
+    .fourth-section-tab{
+        font-size: 10px;
+        padding: 6px 9px;
+    }
+    .fourth-section-tab-content{
+        width: 295px;
+        margin: 0 auto;
+    }
+    .fourth-section-content-str{
+        font-size: 9px;
+    }
+    .fourth-section-content-hr{
+        margin: 13px 0 25px 0;
+    }
+    
+}

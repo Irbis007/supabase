@@ -1,0 +1,26 @@
+@import url('modules/var.css');
+@import url('modules/reboot.css');
+@import url('modules/header.css');
+@import url('modules/elements.css');
+@import url('modules/intro.css');
+@import url('modules/benefits.css');
+@import url('modules/second-section.css');
+@import url('modules/api.css');
+@import url('modules/footer.css');
+@import url('modules/fourth-section.css');
+@import url('modules/fifth-section.css');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg-color-100);
+}
+
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
