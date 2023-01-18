@@ -24,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 14px;
     margin-bottom: 16px;
     max-width: 530px;
 }
@@ -147,23 +148,23 @@
 }
 
 .block-red {
-    max-width: 900px;
-    height: 400px;
+    max-width: 560px;
+    height: 369px;
     background-color: red !important;
 }
 .block-green {
-    max-width: 900px;
-    height: 400px;
+    max-width: 560px;
+    height: 369px;
     background-color: green !important;
 }
 .block-white {
-    max-width: 900px;
-    height: 400px;
+    max-width: 560px;
+    height: 369px;
     background-color: white !important;
 }
 .block-yellow {
-    max-width: 900px;
-    height: 400px;
+    max-width: 560px;
+    height: 369px;
     background-color: yellow !important;
 }
 

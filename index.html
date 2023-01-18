@@ -290,7 +290,7 @@
                             <span class="fourth-section-tab" data-tab="#fourth-section-tab-3">Authenticated access to a bucket</span> 
                         </div>
                     <div class="fourth-section-tab-wrapper">
-                        <div class="fourth-section-tab-content active" id="fourth-section-tab-1">
+                        <div class="fourth-section-tab-content " id="fourth-section-tab-1">
                             <div class="fourth-section-content-str">
                                 <div class="number-str">1</div>
                                 <div class="content-str"><span class="command-blue-text">create  policy </span><span class="command-green-text">   "Public Access"</span></div>
@@ -310,8 +310,47 @@
                             <div class="fourth-section-command-title title">Allow public CRUD access to a bucket</div>
                             <div class="fourth-section-command-descr descr">This will allow any user access to the bucket named 'avatars'</div>
                         </div>
-                        <div class="fourth-section-tab-content block-red" id="fourth-section-tab-2"></div>
-                        <div class="fourth-section-tab-content block-green" id="fourth-section-tab-3"></div>
+
+                        <div class="fourth-section-tab-content " id="fourth-section-tab-2">
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">1</div>
+                                <div class="content-str"><span class="command-green-text">create  policy </span><span class="command-blue-text">   "Public Access"</span></div>
+                            </div>
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">2</div>
+                                <div class="content-str"><span class="command-green-text">on</span>storage.objects <span class="command-green-text">for all</span></div>
+                            </div>
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">3</div>
+                                <div class="content-str"><span class="command-green-text">using</span>( bucket_id = <span class="command-blue-text">'avatars'</span>);</div>
+                            </div>
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">4</div>
+                                <div class="content-str"></div>
+                            </div>
+                            <div class="fourth-section-command-title title">Allow public CRUD access to a bucket</div>
+                            <div class="fourth-section-command-descr descr">This will allow any user access to the bucket named 'avatars'</div>
+                        </div>
+                        <div class="fourth-section-tab-content active" id="fourth-section-tab-3">
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">1</div>
+                                <div class="content-str"><span class="command-blue-text">create  policy </span><span class="command-green-text">   "Public Access"</span></div>
+                            </div>
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">2</div>
+                                <div class="content-str"><span class="command-blue-text">on</span>storage.objects <span class="command-blue-text">for all</span></div>
+                            </div>
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">3</div>
+                                <div class="content-str"><span class="command-blue-text">using</span>( bucket_id = <span class="command-green-text">'avatars'</span>);</div>
+                            </div>
+                            <div class="fourth-section-content-str">
+                                <div class="number-str">4</div>
+                                <div class="content-str"></div>
+                            </div>
+                            <div class="fourth-section-command-title title">Allow public CRUD access to a bucket</div>
+                            <div class="fourth-section-command-descr descr">This will allow any user access to the bucket named 'avatars'</div>
+                        </div>
                     </div>
                 </div>
             </div>
