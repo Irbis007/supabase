@@ -43,6 +43,24 @@ document.addEventListener('DOMContentLoaded', ()=>{
             currentTab.classList.add('active')
         } )
     });
+    thirdSectionTab.forEach((item) => {
+        item.addEventListener('click', ()=>{
+            let currentBtn = item;
+            let tabId = currentBtn.getAttribute('data-tab')
+            let currentTab = document.querySelector(tabId)
+
+            thirdSectionTab.forEach( item => {
+                item.classList.remove('active')
+            })
+
+            thirdSectionTabContent.forEach( item => {
+                item.classList.remove('active')
+            })
+
+            currentBtn.classList.add('active');
+            currentTab.classList.add('active')
+        } )
+    });
     fourthSectionTab.forEach((item) => {
         item.addEventListener('click', ()=>{
             let currentBtn = item;
