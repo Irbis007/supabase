@@ -114,3 +114,9 @@ button:hover{
 .body-white .header .button-transparent{
     color: #000 !important;
 }
+
+
+
+.body-white .header .category-list .category-item{
+    background: rgb(232, 231, 231) !important;
+}

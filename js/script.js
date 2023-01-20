@@ -100,6 +100,9 @@ const modalCloseBtn = document.querySelector(".modal__close")
 const overflow = document.querySelector('.overflow')
 const body = document.querySelector('body')
 const modalButtonSubmit = document.querySelector('.form__button')
+const modal = document.querySelector('.modal')
+const btnSingIn = document.querySelector('.btn-sing__in')
+const modalSingIn = document.querySelector('.modal-sing__in')
 
 
 
@@ -107,19 +110,28 @@ buttonStart.forEach(item =>{
     item.addEventListener('click', () =>{
         modalStart.classList.add('modal__active')
         body.classList.add('active')
+        modal.classList.add('modal__active')
     })
 })
 
 
 document.addEventListener('click', e =>{
-    closeModal(e)
+    closeModal(e, modalStart)
+    closeModal(e, modalSingIn)
 })
 
-function closeModal(e) {
+function closeModal(e, closeTarget) {
     e.preventDefault()
     let target = e.target
     if(target == modalCloseBtn || target == overflow || target == modalButtonSubmit){
-        modalStart.classList.remove('modal__active')
+        closeTarget.classList.remove('modal__active')
         body.classList.remove('active')
+        modal.classList.remove('modal__active')
     }
 }
+
+btnSingIn.addEventListener('click', ()=>{
+    modalSingIn.classList.add('modal__active')
+    body.classList.add('active')
+    modal.classList.add('modal__active')
+})

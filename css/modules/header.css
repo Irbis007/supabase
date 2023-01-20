@@ -55,7 +55,7 @@
     height: calc(4 * 51px + 1px);
 }
 .header .header-nav .list .item-category.active .developers-list{
-    height: calc(7 * 51px + 1px);
+    height: calc(6 * 51px + 1px);
 }
 
 .header .header-nav .list .item-category .category-list .category-item{

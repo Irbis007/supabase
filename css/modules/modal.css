@@ -89,6 +89,10 @@
     transform: rotate(-45deg);
 }
 
-.body-white .header .category-list .category-item{
-    background: rgb(232, 231, 231) !important;
+.modal .modal__start, .modal .modal-sing__in{
+    display: none;
+}
+
+.modal .modal__start.modal__active, .modal .modal-sing__in.modal__active{
+    display: block;
 }

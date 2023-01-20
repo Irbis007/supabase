@@ -73,7 +73,7 @@
             </div>
             <div class="header-buttons">
                 <button class="header-button button-green button button__start">Start your project</button>
-                <button class="header-button button-transparent button">Sign in</button>
+                <button class="header-button button-transparent button btn-sing__in">Sign in</button>
             </div>
         </div>
     </header>
@@ -458,19 +458,23 @@
 
 
 
-    <div class="modal__start modal">
+    <div class=" modal">
         <div class="overflow">
-            <div class="modal__wrapper">
+            <div class="modal__wrapper modal__start">
                 <form class="modal__form">
                     <input type="text" class="form__name" placeholder="Name">
                     <input type="text" class="form__email" placeholder="Email">
                     <button class="form__button">Submit</button>
-                    <div class="modal__close"></div>
+                </form>
+            </div>
+            <div class="modal__wrapper modal-sing__in">
+                <form class="modal__form">
+                    <input type="text" class="form__name" placeholder="Login">
+                    <input type="text" class="form__email" placeholder="Password">
+                    <button class="form__button">Submit</button>
                 </form>
             </div>
         </div>
-    </div>
-    <div class="modal modal-sing__in">
     </div>
     <script src="js/script.js"></script>
 </body>
