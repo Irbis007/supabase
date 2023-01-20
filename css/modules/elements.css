@@ -76,11 +76,11 @@ button:hover{
     background-color: var(--bg-color-1500) !important;
 }
 
-.body-white, .body-white div{
-    background-color: var(--bg-color-800);
+.body-white, .body-white div, .body-white .modal__wrapper{
+    background-color: var(--bg-color-800) !important;
 }
 
-.body-white, .body-white .title, .body-white a, .body-white .descr, .body-white div, .body-white button, .body-white .descr p, .body-white span{
+.body-white, .body-white .title, .body-white a, .body-white .descr, .body-white div, .body-white .descr p, .body-white span{
     color: #000 !important ;
 }
 
@@ -100,4 +100,17 @@ button:hover{
 
 .body-white .footer .theme{
     background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.body-white .overflow{
+    background-color: rgba(246, 246, 246, 0.541) !important;
+}
+
+.body-white .modal input{
+    background: rgb(239, 238, 238) !important;
+    color: black !important;
+}
+
+.body-white .header .button-transparent{
+    color: #000 !important;
 }

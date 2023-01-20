@@ -9,6 +9,7 @@
 @import url('modules/footer.css');
 @import url('modules/fourth-section.css');
 @import url('modules/fifth-section.css');
+@import url('modules/modal.css');
 
 
 *{
@@ -17,6 +18,10 @@
 
 body{
     background: var(--bg-color-100);
+}
+
+body.active{
+    overflow: hidden;
 }
 
 

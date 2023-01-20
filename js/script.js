@@ -93,3 +93,33 @@ document.addEventListener('DOMContentLoaded', ()=>{
     })
 
 })
+
+const buttonStart = document.querySelectorAll(".button__start")
+const modalStart = document.querySelector('.modal__start')
+const modalCloseBtn = document.querySelector(".modal__close")
+const overflow = document.querySelector('.overflow')
+const body = document.querySelector('body')
+const modalButtonSubmit = document.querySelector('.form__button')
+
+
+
+buttonStart.forEach(item =>{
+    item.addEventListener('click', () =>{
+        modalStart.classList.add('modal__active')
+        body.classList.add('active')
+    })
+})
+
+
+document.addEventListener('click', e =>{
+    closeModal(e)
+})
+
+function closeModal(e) {
+    e.preventDefault()
+    let target = e.target
+    if(target == modalCloseBtn || target == overflow || target == modalButtonSubmit){
+        modalStart.classList.remove('modal__active')
+        body.classList.remove('active')
+    }
+}
